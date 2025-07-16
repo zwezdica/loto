@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #4caf50;
+}
+
+#brojevi-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.broj {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  transition: transform 0.2s, border-color 0.3s;
+}
+
+.broj:hover {
+  transform: scale(1.1);
+  border-color: #4caf50;
+}
+
+.broj.izabran {
+  border-color: #4caf50;
+  background-color: #e8f5e9;
+}
+
+.broj img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+#izabraniBrojevi,
+#randomBrojevi {
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.reset-dugme {
+  display: none; /* Skriveno na početku */
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-dugme:hover {
+  background-color: #d32f2f;
+}
+
+p span {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.1em;
+}
